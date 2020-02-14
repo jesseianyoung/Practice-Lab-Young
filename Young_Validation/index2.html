@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="validation js/validation2.js"></script>
+    <title>Create a New Event</title>
+</head>
+<body>
+   
+        <label for="Events"><b>Event type: </b></label>
+        <select id="Events" name="eventtype" required onchange="validateDropbox()" required>
+                <option value="Choose one: ">Choose one:</option>
+                <option value="wedding">Wedding</option>
+                <option value="birthday">Bithday</option>
+                <option value="reunion">Reunion</option>
+                
+          </select>
+          <br><br> 
+
+          <label for="1"><b>Event Title: </b></label>
+          <input type="text" name="Event Title" id="1" required> 
+          <br><br> 
+
+          <label for="2"><b>Event Dates: </b></label>
+          <input type="text" name="Date from" id="2" required>  <label for="3">to</label> 
+          <input type="text" name="date to" id="3" required>
+          <br><br>
+
+          <label for="4"><b>Posting Dates: </b></label>
+          <input type="text" name="Postdates" id="4" required>
+    
+    <br><br><br>
+
+        <fieldset name="set">      
+            <input type="checkbox" name="check" id="a" value="Check Registration">Is registration required?<br>      
+            <input type="checkbox" name="check" id="b" value="Check Events associated family">Is this event associated with any Family Programs?<br>      
+            <input type="checkbox" name="check" id="c" value="Check Registration Completion Receive a Generative Email">Upon Registration Completion, Are Users to Receive an Auto Generated Email?<br>
+            <input type="checkbox" name="check" id="d" value="Check contacts">Is There a Point of Contact?<br>  
+            <input type="checkbox" name="check" id="e" value="Check hosting commant point of contact">Is There a Hosting Command Point of Contact?<br>  
+            <br>      
+        </fieldset> 
+    
+    <br><br>
+    
+        <input type="submit" value="Save" onclick="validate()">
+        <input type="button" value="Cancel">
+   
+    
+</body>
+</html>
